@@ -3,7 +3,7 @@
 import typing
 
 
-def sum_mixed_list(mxd_lst: typing.Union[int, float]) -> float:
+def sum_mixed_list(mxd_lst: typing.List[typing.Union[int, float]]) -> float:
     """_summary_
 
     Args:
