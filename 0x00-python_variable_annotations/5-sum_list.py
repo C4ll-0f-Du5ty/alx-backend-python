@@ -11,7 +11,7 @@ def sum_list(input_list: list[float, int]) -> float:
     Returns:
         float: _description_
     """
-    counter = 0
+    counter: float = 0
     for i in input_list:
         counter += i
     return counter
