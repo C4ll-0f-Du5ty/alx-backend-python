@@ -2,6 +2,7 @@
 """_summary_
     """
 import random
+import asyncio
 
 
 async def wait_random(max_delay: int = 10) -> int:
@@ -13,4 +14,6 @@ async def wait_random(max_delay: int = 10) -> int:
     Returns:
         int: _description_
     """
-    return random.uniform(0, max_delay)
+    time: float = random.uniform(0, max_delay)
+    await asyncio.sleep(time)
+    return time
