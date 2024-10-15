@@ -14,7 +14,7 @@ async def async_comprehension() -> typing.List[float]:
     Returns:
         typing.List[float]: _description_
     """
-    l: list = []
+    l = []
     async for i in async_generator():
         l.append(i)
     return l
